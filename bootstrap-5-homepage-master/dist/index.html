@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/owl/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>Avance Teste</title>
+  </head>
+  <body>
+    <!--HEADER-->
+    <div id="header">
+      <div class="container">
+        <nav class="navbar bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              Avance Teste
+            </a>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!--//HEADER-->
+
+    <!--SLIDER-->
+    <div id="slider" class="block">
+      <div class="container pt-5">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 align-self-center mb-md-0 mb-4">
+            <h1>Teste Técnico Avance</h1>
+            <h4 class="mb-4">Desenvolvimento de um Sistema CRUD com PHP, JavaScript
+              e Requisições REST</h4>
+              <a
+              href="https://luizaao.github.io" target="_blank"
+              class="button btn btn-primary button-primary d-md-inline-block d-block mb-md-0 mb-2 mr-md-2"
+              >Portfólio Luiz</a
+            >
+            <a
+              href="https://www.avance.inf.br" target="_blank"
+              class="button btn btn-outline-primary button-primary-outline d-md-inline-block d-block"
+              >Avance Sistemas</a
+            >
+          </div>
+          <div class="col-lg-8 col-md-6 align-self-center text-center">
+            <img src="assets/Logoh.0aeb792a.png" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--//SLIDER-->
+
+    <!--SOBRE-->
+    <div id="sobre" class="block">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-md-6 align-self-center text-center order-md-1 order-2"
+          >
+            <img src="assets/sobre.svg" class="img-fluid" />
+          </div>
+          <div
+            class="col-md-6 align-self-center order-md-2 order-1 mb-md-0 mb-4"
+          >
+            <h2 class="title">Sistema CRUD</h2>
+            <div class="container">
+              <div class="card">
+                  <div class="card-body">
+                      <h3 id="total">Cadastro</h4>
+                          <button class="btn btn-primary" id="create">Criar Cadastro</button>
+                  </div>
+              </div>
+          </div>
+
+
+          <!-- <div class="container"> -->
+          <div class="modal" id="create-student">
+              <div class="modal-body">
+                  <h3>Criar Cadastro</h3>
+                  <div class="form-group">
+                      <label for=""><b>Nome</b></label>
+                      <input type="text" placeholder="Nome" id="name" class="form-control">
+                  </div>
+                  <div class="form-group">
+                      <label for=""><b>Idade</b></label>
+                      <input type="number" placeholder="Idade" id="age" class="form-control">
+                  </div>
+                  <div class="form-group">
+                      <label for=""><b>Região</b></label>
+                      <input type="text" placeholder="Região" id="country" class="form-control">
+                  </div>
+                  <div class="form-group buttons">
+                      <button class="btn btn-success" type="submit" id="save">Salvar</button>
+                      <button class="btn btn-danger" type="submit" id="close">Fechar</button>
+                  </div>
+              </div>
+          </div>
+          <!-- </div> -->
+      
+          <!-- editar-->
+          <div class="modal" id="update-student">
+              <div class="modal-body">
+                  <h3>Atualizar</h3>
+                  <div class="form-group">
+                      <label for=""><b>Nome</b></label>
+                      <input type="text" placeholder="Nome" id="edit_name" class="form-control">
+                      <input type="hidden" placeholder="Id" id="id" class="form-control">
+                  </div>
+                  <div class="form-group">
+                      <label for=""><b>Idade</b></label>
+                      <input type="number" placeholder="Idade" id="edit_age" class="form-control">
+                  </div>
+                  <div class="form-group">
+                      <label for=""><b>Região</b></label>
+                      <input type="text" placeholder="Região" id="edit_country" class="form-control">
+                  </div>
+                  <div class="form-group buttons">
+                      <button class="btn btn-success" id="update" type="submit">Atualizar</button>
+                      <button class="btn btn-danger" type="submit" id="update_close">Fechar</button>
+                  </div>
+              </div>
+          </div>
+          <script src="js/app.js"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--//SOBRE-->
+
+    <!--FOOTER-->
+    <footer id="contato">
+      <div class="container">
+        <div class="logo py-4">
+          <div class="row">
+            <div class="col-md-6 align-self-center text-md-left text-center">
+              <img src="assets/logo.svg" class="img-fluid" />
+            </div>
+            <div class="col-md-6 align-self-center text-right">
+              <ul>
+                <li>
+                  <a href="https://www.linkedin.com/in/luiz-guilherme257/"><img src="assets/linkedin.svg" /></a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/@LZCode/featured"><img src="assets/youtube.svg" /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--//FOOTER-->
+
+    <!--JS-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/magnify/jquery.magnific-popup.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
